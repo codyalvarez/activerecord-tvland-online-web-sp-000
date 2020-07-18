@@ -7,7 +7,7 @@ class Show < ActiveRecord::Base
   def actors_list
     self.actors.map do |actor|
       self.actor.full_name
-      
+
 
     # grab 1st name, grab last name, grab film
     #binding.pry
