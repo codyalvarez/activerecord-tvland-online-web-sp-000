@@ -8,7 +8,5 @@ class Show < ActiveRecord::Base
     self.actors[0] + self.actors[1] + self.actors.name
 
     #binding.pry
-
-
   end
 end
