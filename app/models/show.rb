@@ -5,8 +5,11 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-    self.actors[0] + self.actors[1] + self.actors.name
+    self.actors.map do |actor|
+      self.actor.full_name
+      
 
+    # grab 1st name, grab last name, grab film
     #binding.pry
   end
 end
